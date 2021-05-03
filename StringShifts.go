@@ -10,7 +10,6 @@ func leftShift(a []rune, shift int32) []rune {
 }
 
 func rightShift(a []rune, shift int32) []rune {
-
 	for i := 0; int32(i) < shift; i++ {
 		a = append([]rune{a[len(a)-1]}, a[0:len(a)-1]...)
 	}
